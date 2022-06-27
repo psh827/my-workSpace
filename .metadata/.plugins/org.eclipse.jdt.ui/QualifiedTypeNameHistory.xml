@@ -28,7 +28,6 @@
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.memory.HeapAccess.BarrierType"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.varxyz.jv250.jdbc.banking.SavingAccount"/>
@@ -47,9 +46,16 @@
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.varxyz.jv251.dao.DataSourceManager"/>
-    <fullyQualifiedTypeName name="com.varxyz.jv251.domain.SavingAccount"/>
-    <fullyQualifiedTypeName name="com.varxyz.jv251.domain.CheckingAccount"/>
-    <fullyQualifiedTypeName name="com.varxyz.jv251.domain.Customer"/>
+    <fullyQualifiedTypeName name="com.varxyz.jv251.dao.CustomerDao"/>
     <fullyQualifiedTypeName name="com.varxyz.jv251.dao.AccountDao"/>
+    <fullyQualifiedTypeName name="com.varxyz.jv251.service.CustomerService"/>
+    <fullyQualifiedTypeName name="com.varxyz.jv251.domain.SavingAccount"/>
+    <fullyQualifiedTypeName name="com.varxyz.jv251.exception.EntityNotFoundException"/>
+    <fullyQualifiedTypeName name="com.varxyz.jv251.exception.CustomerNotFoundException"/>
+    <fullyQualifiedTypeName name="com.varxyz.jv251.domain.CheckingAccount"/>
+    <fullyQualifiedTypeName name="com.varxyz.jv251.service.BankService"/>
+    <fullyQualifiedTypeName name="com.varxyz.jv251.domain.Customer"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="com.varxyz.jv251.domain.Account"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

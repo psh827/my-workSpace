@@ -20,6 +20,17 @@ public class Customer {
 		this.phone = phone;
 	}
 	
+	
+	
+	public Customer(String name, String ssn, String phone, String userId, String passwd) {
+		super();
+		this.name = name;
+		this.ssn = ssn;
+		this.phone = phone;
+		this.userId = userId;
+		this.passwd = passwd;
+	}
+	
 	public long getCid() {
 		return cid;
 	}
@@ -78,7 +89,7 @@ public class Customer {
 	
 	@Override
 	public String toString() {
-		return null;
+		return name + ", " + ssn + ", " + cid + ", " + phone ;
 	}
 
 

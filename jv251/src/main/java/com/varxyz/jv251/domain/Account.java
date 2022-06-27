@@ -67,7 +67,6 @@ public abstract class Account {
 		this.balance += amount;
 	}
 	
-	
 	public Customer getCustomer() {
 		return customer;
 	}
@@ -79,7 +78,7 @@ public abstract class Account {
 	@Override
 	public String toString() {
 		return "Account [aid=" + aid + ", accountNum=" + accountNum 
-				+ ", balance=" + balance + ", accountType=" + accountType;
+				+ ", balance=" + balance + "\n" + accountType + customer;
 
 	}
 	

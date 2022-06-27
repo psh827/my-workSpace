@@ -85,7 +85,7 @@ public class CustomerDao {
 	 */
 	
 	public void addCustomer(Customer customer) {
-		String sql = "INSERT INTO Customer(name, ssn, phone, customerId, passwd) "
+		String sql = "INSERT INTO Customer(name, ssn, phone,userId, passwd) "
 				+ " VALUES (?, ?, ?, ?, ?)";
 		try {
 			Connection con = DataSourceManager.getConnection();
