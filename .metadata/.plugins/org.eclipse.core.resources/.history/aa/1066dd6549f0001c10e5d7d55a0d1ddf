@@ -1,0 +1,14 @@
+package com.varxyz.banking.domain;
+
+import java.util.*;
+
+public class Customer extends Account{
+	private String name;
+	private String ssn;
+	private String phone;
+	private String customerId;
+	private String passwd;
+	List<Account> account = new ArrayList<Account>();
+	
+
+}

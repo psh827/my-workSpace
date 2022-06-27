@@ -1,0 +1,5 @@
+package jv200.mode008;
+
+public class NotPrimeNumException extends Exception{
+	
+}

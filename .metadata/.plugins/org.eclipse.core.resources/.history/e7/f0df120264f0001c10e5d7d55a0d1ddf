@@ -1,0 +1,10 @@
+package com.varxyz.banking.domain;
+
+import java.util.Collection;
+
+public interface AccountService {
+	void addAccount(Account account);
+	Account getAccountBySsn(String ssn);
+	Collection<Account> getAllAccounts();
+	int getNumOfAccounts();
+}

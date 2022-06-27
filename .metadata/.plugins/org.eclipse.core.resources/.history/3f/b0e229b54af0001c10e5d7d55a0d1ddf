@@ -1,0 +1,25 @@
+package com.varxyz.banking.domain;
+
+import java.util.*;
+
+public class CustomerService extends Customer{
+	Map<String, Customer> customerMap = new HashMap<String, Customer>();
+	
+	public void addCustomer() {
+		
+	}
+	
+	public void getCustomerByssn() {
+		
+	}
+	
+	public void getAllCustomers() {
+		
+	}
+	
+	public void getNumOfCustomers() {
+		
+	}
+	
+	
+}

@@ -1,0 +1,24 @@
+package jv200.mode009;
+
+import java.util.*;
+/**
+ * java 5.0 이 후로 auto-boxing 
+ * int -> Integer : boxing
+ * Integer -> int : unboxing
+ * 자동으로 해줌.
+ * 
+ * @author Administrator
+ *
+ */
+public class MapExample {
+	public static void main(String[] args) {
+		Map<Integer, String> map = new HashMap<Integer, String>();
+		map.put(Integer.valueOf(1), "유비");
+		map.put(2, "관우");
+		map.put(3, "장비");
+		
+		System.out.println(map.get(new Integer(1)));
+		System.out.println(map.get(new Integer(2)));
+		System.out.println(map.get(new Integer(3)));
+	}
+}

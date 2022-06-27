@@ -1,0 +1,22 @@
+package com.varxyz.banking.domain;
+
+public class CustomerService extends Customer{
+
+	public void addCustomer() {
+		
+	}
+	
+	public void getCustomerByssn() {
+		
+	}
+	
+	public void getAllCustomers() {
+		
+	}
+	
+	public void getNumOfCustomers() {
+		
+	}
+	
+	
+}

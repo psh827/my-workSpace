@@ -1,0 +1,16 @@
+package jv200.mode009;
+
+import java.util.ArrayList;
+
+public class ListExample2 {
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(5);
+		list.add(new Integer(10));
+		for(int i : list) {
+			System.out.println(i);
+		}
+		
+		System.out.println(list);
+	}
+}

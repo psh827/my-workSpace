@@ -1,0 +1,11 @@
+package com.varxyz.banking.domain;
+
+public class CustomerTest {
+
+	public static void main(String[] args) {
+		Customer Park = new CustomerService();
+		
+
+	}
+
+}

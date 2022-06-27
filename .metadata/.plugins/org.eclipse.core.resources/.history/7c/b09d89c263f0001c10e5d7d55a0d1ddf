@@ -1,0 +1,16 @@
+package com.varxyz.banking.domain;
+/**
+ * 물흐르는대로 흘러가겠습니다.
+ * @author 빡상.
+ *
+ */
+public class Account {
+	private String accountNum;
+	protected double balance;
+	
+	
+	public void deposite(double amount) {
+		this.balance += amount;
+	}
+	
+}

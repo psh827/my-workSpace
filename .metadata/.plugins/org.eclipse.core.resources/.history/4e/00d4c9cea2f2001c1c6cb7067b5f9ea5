@@ -1,0 +1,17 @@
+package com.varxyz.jv250.jdbc.banking;
+
+public class AccountDaoTest {
+	public static void main(String[] args) {
+		AccountDao aDao = new AccountDao();
+		
+		Account a = new SavingAccount("999-99-9999", 2451.0, 0.02);
+		a.setAccountType('S');
+		a.setCustomerId(1001);
+		
+		aDao.addAccount(a);
+		
+		Account c = new CheckingAccount("123-12-1234", 5454.0, 5.0);
+		c.setCustomerId(1002);
+		c.setAccountType('C');
+	}
+}

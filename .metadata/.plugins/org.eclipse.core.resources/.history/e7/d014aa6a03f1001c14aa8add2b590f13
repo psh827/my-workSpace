@@ -1,0 +1,67 @@
+package com.varxyz.banking.domain;
+
+import java.util.*;
+
+public class AccountServiceImpl implements AccountService{
+	private static AccountService accountService = new AccountServiceImpl();
+	private List<Account> accountList = new ArrayList<Account>();
+	private CustomerService2 customerService;
+	
+	private AccountServiceImpl() {
+		customerService = CustomerServiceImpl.getInstance();
+	}
+	
+	public static AccountService getInstance() {
+		return accountService;
+	}
+
+	public Account createSavingAccount(String accountNum, double balance,
+													double interestRate) {
+		return new SavingAccount(accountNum, balance, interestRate);
+	}
+	
+	public Account createCheckingAccount(String accountNum, double balance,
+												double overdraftAmount) {
+		return new CheckingAccount(accountNum, balance, overdraftAmount);
+	}
+	
+	
+	public void addAccount(Account account) {
+		if(getAccountByAccountNum(account.getAccountNum()) == null) {
+			accountList.add(account);
+			System.out.println("계좌성공");
+		}	
+	}
+	
+	public void addAccount(Account account, String ssn) {
+		Customer customer = customerService.getCustomerBySsn(ssn);
+		account.setCustomer(customer);
+		accountList.add(account);
+	}
+	
+	
+	public List<Account> getAccountBySsn(String ssn) {
+		Customer customer = customerService.getCustomerBySsn(ssn);
+	    List<Account> theAccount = new ArrayList<Account>();
+	    theAccount.add((Account) customer.getAccount());
+	    return theAccount;
+	}
+	
+	public Account getAccountByAccountNum(String accountNum) {
+		for(Account a : accountList) {
+			if(accountNum.equals(a.getAccountNum())) {
+				return a;
+			}
+		}
+		return null;
+	}
+	
+	public Collection<Account> getAllAccounts() {
+		return accountList;
+	}
+
+	public int getNumOfAccounts() {
+		return accountList.size();
+	}
+	
+}

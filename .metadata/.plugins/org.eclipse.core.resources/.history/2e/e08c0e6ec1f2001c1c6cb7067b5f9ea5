@@ -1,0 +1,19 @@
+package com.varxyz.jv250.jdbc.banking;
+
+public class AccountDaoTest {
+	public static void main(String[] args) {
+		AccountDao aDao = new AccountDao();
+		for(Account a : aDao.findAccountsBySsn("961025-1234567")) {
+			System.out.println(a);
+		}
+		CustomerDao dao = new CustomerDao();
+//		Account a = new SavingAccount("531-24-7851", 1421.0, 0.052);
+		
+//		a.setCustomer(dao.findCustomerBySsn("991215-1242015"));
+		
+//		aDao.addAccount(a);
+		
+		
+		
+	}
+}

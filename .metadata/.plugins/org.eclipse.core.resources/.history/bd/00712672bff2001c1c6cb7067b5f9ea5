@@ -1,0 +1,85 @@
+package com.varxyz.jv250.jdbc.banking;
+/**
+ * 물흐르는대로 흘러가겠습니다.
+ * @author 빡상.
+ *
+ */
+public abstract class Account {
+	private String accountNum;
+	private long aid; 
+	private char accountType;
+	private long customerId;
+	protected double balance;
+	protected Customer customer;
+	
+	
+	public char getAccountType() {
+		return accountType;
+	}
+
+	public void setAccountType(char accountType) {
+		this.accountType = accountType;
+	}
+
+	public long getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(long customerId) {
+		this.customerId = customerId;
+	}
+
+
+	
+	public long getAid() {
+		return aid;
+	}
+
+	public void setAid(long aid) {
+		this.aid = aid;
+	}
+
+
+	
+	public Account() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Account(String accountNum, double balance) {
+		this.accountNum = accountNum;
+		this.balance = balance;
+	}
+	
+	public Customer getCustomer() {
+		return customer;
+	}
+	
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	
+	public String getAccountNum() {
+		return accountNum;
+	}
+
+
+	public void setAccountNum(String accountNum) {
+		this.accountNum = accountNum;
+	}
+
+
+	public double getBalance() {
+		return balance;
+	}
+
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+
+	public void deposite(double amount) {
+		this.balance += amount;
+	}
+	
+}

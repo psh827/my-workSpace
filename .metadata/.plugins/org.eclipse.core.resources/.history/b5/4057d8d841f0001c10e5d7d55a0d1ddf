@@ -1,0 +1,13 @@
+package jv200.mode009;
+
+import java.util.ArrayList;
+
+public class ListExample2 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("hello");
+		list.add(new String("Java"));
+		list.add("World!");
+		System.out.println(list);
+	}
+}

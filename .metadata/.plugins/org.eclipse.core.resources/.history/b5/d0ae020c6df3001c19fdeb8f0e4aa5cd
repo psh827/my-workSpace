@@ -1,0 +1,21 @@
+package jv200.mode010;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class FileInputStreamTest {
+	public static void main(String[] args) {
+		FileInputStream is = null;
+		int totalByes = 0;
+		try {
+			try {
+				
+			} finally {
+				// TODO: handle exception
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
