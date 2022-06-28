@@ -1,9 +1,0 @@
-package com.varxyz.banking.domain;
-
-public interface CustomerService2 {
-	void addCustomer(Customer customer);
-	Customer getCustomerBySsn(String ssn);
-	Collection<Customer> getAllCustomers();
-	int getNumOfCustomers();
-}
-}

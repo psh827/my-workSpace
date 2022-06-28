@@ -1,8 +1,0 @@
-package com.varxyz.banking.domain;
-
-public class CustomerServiceTest {
-	CustomerService2 customer = new CustomerServiceImpl2();
-	customer.
-	
-	
-}
