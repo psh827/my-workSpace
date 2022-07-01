@@ -51,7 +51,7 @@
               <h3 id="name">
                 <label for="user_name">이름</label>
               </h3>
-              <input type="text" id="user_name" name="user_name">
+              <input type="text" id="user_name" name="userName">
             </td>
           </tr>
           <tr>

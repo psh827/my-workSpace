@@ -19,12 +19,12 @@ import javax.servlet.http.HttpServletResponse;
 public class AddUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	private UserService userService = new UserService();
+	private UserService userService;
 	/**
 	 * @see Servlet#init(ServletConfig)
 	 */
 	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
+		userService = new UserService();
 	}
 
 	/**
@@ -41,10 +41,11 @@ public class AddUserServlet extends HttpServlet {
 		String email1= request.getParameter("email1");
 		String email2 = request.getParameter("email2");
 		String addr1 = request.getParameter("addr1");
-		String addr2 = request.getParameter("addr2");
+		String addr2 = request.getParameter(userName);
 		
 		//2. 유효성 검증 및 변환
 		List<String> errorMsgs = new ArrayList();
+		List<String> errorList = new ArrayList();
 		if(userId == null || userId.length() == 0) {
 			errorMsgs.add("id는 필수입력 정보입니다.");
 		}else if(passwd == null || passwd.length() == 0) {
@@ -69,6 +70,7 @@ public class AddUserServlet extends HttpServlet {
 		userService.addUser(user);
 		
 		//4. NextPage
+		request.setAttribute("userName", userName);
 		dispatcher = request.getRequestDispatcher("/error/success.jsp");
 		dispatcher.forward(request, response);
 	}

@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	success!
+	<%
+		String name = (String)request.getAttribute("userName");
+	%>
+	<h3> Hello, <%=name %></h3>
 </body>
 </html>
