@@ -7,9 +7,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-		String name = (String)request.getAttribute("userName");
-	%>
-	<h3> Hello, <%=name %></h3>
+  <div id="wrapper">
+   <div id="header">
+   		<jsp:include page="/incl/banner.jsp">
+   			<jsp:param name="subtitle" value="mode007 : Java Beans and include" />
+   		</jsp:include>
+   </div>
+   <div id="content-wrapper">
+   		<h3>회원가입되었습니다.</h3>
+   		<jsp:useBean id="user" class="com.varxyz.jv300.mode007.User" scope="request"/>
+   			아이디 : <jsp:getProperty property="userId" name="user"/>
+   			이름 : <jsp:getProperty property="userName" name="user"/>
+   </div>
+   <div id="footer">
+   		<%@ include file="/incl/footer.jsp" %>
+   </div>
+  </div>
+  </body>
 </body>
 </html>
